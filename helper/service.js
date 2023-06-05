@@ -1,10 +1,10 @@
 import axios from "axios";
 
 
-export const getGammes = async (a) => {
+export const getGammes = async () => {
   
     return await axios
-      .get(`${process.env.API_URL}/gamme`)
+      .get(`/api/gBase/gamme`)
       .then((response) => {
         return response;
       })
